@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  position: relative; 
+}
+
+.card:hover {
+  transform: scale(1.08);
+  /* box-shadow: 0 2px 10px rgba(203, 230, 54, 0.1); */
+}
+
+.card img {
+  width: 100%;
+  max-height: 200px;
+  margin-top: 0;
+  object-fit:unset;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card h2 {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.par {
+  margin-top: 10px;
+  font-size: 17px;
+  color: #232222;
+  font-weight: bold;
+  
+}
+.bottom{
+  padding: 10px;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 17px;
+  color: #666;
+}
+
+.rating {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #f39c12;
+}
+
+.star {
+  margin-right: 5px;
+}
+
+.learn-more-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Include transform property */
+}
+
+.learn-more-button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05); /* Fix the scaling property */
+}

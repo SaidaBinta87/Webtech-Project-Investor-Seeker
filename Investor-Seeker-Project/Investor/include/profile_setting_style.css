@@ -1,0 +1,175 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 100%;
+    min-height: 100vh; 
+    background-color: #083f4c;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.sidebarfor {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 25%;
+    position: relative;
+    margin: 40px;
+    margin-right: 20px; 
+    margin-top: 60px;
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebarfor img {
+    width: 150px;
+    height: 150px; 
+    border-radius: 50%; 
+    align-self: center;
+    align-items: center; 
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-left: 95px;
+}
+
+.list {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;  
+    border-radius: 10px;
+    height: 300px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.list li {
+    list-style: none;
+    padding: 18.75px;
+    margin-top: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.list li:hover{
+    background-color:#2d9dda;
+    scale: 1.05;
+    border-radius: 10px;
+    
+}
+
+.list li a {
+    text-decoration: none;
+    color: #262323;
+    font-weight: bold;
+}
+.list li a i {
+    width: 20px; 
+    height: 20px; 
+    font-size: 20px; 
+    margin-right: 10px; 
+    vertical-align: middle; 
+}
+
+.name {
+    text-align: center;
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+}
+
+input[type="submit"],input[type="file"]{
+    margin-top: 10px;
+    width: 120px;
+    padding: 0px 15px;
+    background-color: #2d9dda;
+    color: #fff;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 5px; 
+    cursor: pointer;
+}
+
+
+
+
+.settingside-allform {
+    background-color: #fff;
+    width: 70%;
+    height: 90vh;
+    margin-top: 60px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+    margin: 10px;
+}
+
+
+.details label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.details input[type="text"],
+.details input[type="number"],
+.details input[type="email"],
+.details input[type="password"]{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9; 
+    transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+.details input[type="text"]:focus,
+.details input[type="number"]:focus,
+.details input[type="email"]:focus,
+.details input[type="password"]:focus,
+.details input[type="text"]:hover,
+.details input[type="number"]:hover,
+.details input[type="email"]:hover,
+.details input[type="password"]:hover{
+    border-color: #2d9dda;
+    box-shadow: 0 0 8px rgba(45, 157, 218, 0.6); 
+}
+
+.details input[type="submit"] {
+    width: auto; 
+    background-color: #2d9dda;
+    color: #fff;
+    border: none;
+    height: 40px; 
+    border-radius: 8px; 
+    margin-top: 15px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.details input[type="submit"]:hover {
+    background-color: #2494c1; 
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebarfor, .settingside-allform {
+        width: 100%;
+        margin: 10px;
+    }
+}

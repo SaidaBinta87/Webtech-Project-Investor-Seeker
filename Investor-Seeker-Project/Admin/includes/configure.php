@@ -1,0 +1,1 @@
+<?php $connnection = mysqli_connect('localhost','root','','project_investor_seeker_db');?>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animated Login Form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<form method="post" action="<?php echo ($_SERVER['PHP_SELF']);?>">
+
+		<?php
+		$email= $pass = "";
+		$email_Err = $pass_Err = "";
+		$matchError = false;
+
+		$errorFlag = false;
+
+		if ($_SERVER["REQUEST_METHOD"] == "POST") {
+				
+			if (!isset($_POST['e_email']) || empty($_POST['e_email'])) {
+				$email_Err = "Email is required";
+				$errorFlag = true; 
+			}else{
+				$email = $_POST['e_email'];
+			}
+				
+			if (!isset($_POST['password']) || empty($_POST['password'])) {
+				$pass_Err = "Password is required";
+				$errorFlag = true;
+			}else{
+				$pass = $_POST['password'];
+			}
+
+			if(!$errorFlag){
+				$users = json_decode(file_get_contents('users.json'), true);
+
+				if(is_array($users)){
+					$matchError = "User not found";
+					foreach ($users as $key => $value) {
+						if($value['email'] == $_POST['e_email']){
+							if ($_POST['password'] == $value['password']){
+								$_SESSION['user'] = $value;
+								if(isset($_POST['remember_me']) && $_POST['remember_me'] == 'remembered'){
+									setrawcookie('user', base64_encode(json_encode($value)));
+								}
+								//header("Location: User_account.php");
+							}else{
+								$matchError = "Password does not match";
+								break;
+							}
+						}
+
+					}
+			
+
+				}else{
+					$matchError = "No users found";
+
+				}
+			}
+			
+
+		}
+
+		?>
+<form method="post" action="<?php echo ($_SERVER['PHP_SELF']);?>">
+
+	<img class="wave" src="img/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="img/bg.svg">
+		</div>
+		<div class="login-content">
+			<form action="index.html">
+				<img src="img/avatar.svg">
+				<h2 class="title">Welcome</h2>
+				<?php
+				if($matchError){
+					?>
+					<span style="color: red;"><?php echo $matchError?></span>	
+					<?php
+				}
+				?>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Email</h5>
+           		   		<input type="text" class="input" name="e_email" value="<?php echo $email;?>">
+           		   		<span class="red"><?php echo $email_Err?></span>
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" class="input" name="password" value="<?php echo $pass;?>">
+           		    	<span class="red"><?php echo $pass_Err?></span>
+            	   </div>
+            	</div>
+            	<a href="#">Forgot Password?</a>
+            	<input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</form>
+</body>
+</html>

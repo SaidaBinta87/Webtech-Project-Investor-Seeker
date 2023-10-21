@@ -1,0 +1,132 @@
+:root{
+    --blue:#287bff;
+    --blue2:#c3d8fa;
+    --white:#fff;
+    --grey:#f5f5f5;
+    --black1:#222;
+    --black2:#999;
+
+}
+.status{
+    height: 10px;
+    width: 10px;
+}
+.admin{
+    background-color: rgb(167, 224, 117);
+}
+.mod{
+    background-color: rgb(238, 238, 136);
+}
+.container2{
+    
+    height: 60px;
+    width: 98%;
+    
+    margin: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    padding: 10px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    
+    
+}
+.btn {
+  
+    
+    
+    padding: 6px 22px;
+    margin: 5px;
+    font-size: large;
+}
+
+.delete-m{
+
+    background: orangered;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.delete-m:hover{
+
+    background: rgb(234, 217, 211);
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 20px;
+    text-align:center;
+    margin: 10px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+  }
+  .a{
+      background-color:#343A42;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 8px;
+  }
+  
+
+  
+  
+  tr:nth-child(even){background-color: var(--blue2);;}
+  
+  th {
+    padding: 20px 20px;
+    background-color: var(--blue);
+    
+    color: white;
+  }
+  
+  
+  
+  
+  .detail table{
+      width: 98%;
+      border-collapse: collapse;
+      margin:10px;
+      
+      
+  }
+  
+  .detail table thead td{
+    font-weight: 700;
+  }
+  
+  .detail .recor table tr{
+      color: var(--black1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      
+  }
+  .detail .recor table tr:last-child{
+      border-bottom: none;
+  }
+  .detail .recor table tr:hover{
+      background: var(--blue);
+      
+      color:var(--white);
+      
+  }
+  
+  .detail .recor table tr td{
+      padding: 25px 10px;
+  }
+  
+  .detail .recor table tr td:last-child{
+      text-align: end;
+  }
+  
+  .detail .recor table tr td:nth-child(2){
+      text-align: end;
+  }
+  .detail .recor table tr td:nth-child(3){
+      text-align: center;
+  }
+  
+  

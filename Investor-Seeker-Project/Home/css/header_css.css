@@ -1,0 +1,177 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+html, body{
+ height: 100%;
+ width: 100%;
+}
+
+.nav{
+background-color:black;
+color:white;
+height: 100px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0px 20px;
+
+position: fixed;
+z-index: 99;
+}
+.item ul{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+list-style: none;
+gap:5vw;
+}
+
+input[type=submit]
+{
+background-color: orange;
+border: none;
+height: 40px;
+width: 80px;
+border-radius: 10px;
+color: white;
+}
+input[type=submit]:hover{
+scale: 1.08;
+background-color: rgb(202, 135, 10);
+
+}
+
+.nav h2{
+  font-size: 2.5vmax;
+}
+
+
+.nav .item a{
+list-style: none;
+text-decoration: none;
+}
+
+.nav li a{
+font-size: 1.3vmax;
+color:white;
+}
+.nav .item a:hover, .nav .item li:hover ,.nav h2:hover,.nav i:hover{
+scale: 1.08;
+color: orange;
+}
+
+.nav i{
+
+font-size: 20px;
+display:none;
+}
+.dropdown_menu{
+display: none;
+position: fixed;
+left: 2rem;
+top: 100px;
+height: 0px;
+width: 300px;
+background: rgba(222, 12, 12, 0.3);
+backdrop-filter: blur(15px);
+border-radius: 10px;
+overflow: hidden;
+transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+z-index: 120;
+}
+
+.open{
+     
+  height: 290px;
+     
+} 
+
+.dropdown_menu li{
+       padding: 0.7rem;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       color: white;
+}
+
+
+.dropdown_menu a{
+color:white;
+list-style: none;
+text-decoration: none;
+}
+
+.dropdown_menu a:hover{
+scale:1.08;
+color:orange;
+}
+.dropdown_menu button:hover{
+ scale:1.08;
+}
+
+
+
+
+button{
+background-color: orange;
+width: 200px;
+color: #fff;
+padding: 0.5rem 1rem;
+border: none;
+outline: none;
+border-radius: 20px;
+font-size: 0.8rem;
+font-weight: bold;
+cursor: pointer;
+transition: scale .2 ease;
+
+} 
+
+@media(max-width: 992px)
+{
+
+
+
+.navigartion .toog_btn{
+  display: block;
+}
+.dropdown_menu{
+  display: block;
+}
+.nav h2{
+    font-size: 25px;
+
+  }
+
+  .nav .item li,
+  .nav .item input{
+    display: none;
+  }
+
+  .nav i{
+    display: block;
+  }
+  .dropdown_menu{
+    display: block;
+  }
+  .page2 .page2_text_side_left .email-submit{
+    flex-direction: column;
+  }
+
+  .page2 .page2_text_side_left .Submit-top,
+.Submit-top{
+
+  float: none;
+  margin-top: 15px;
+}
+
+}
+.nav .span{
+  color: orange;
+}

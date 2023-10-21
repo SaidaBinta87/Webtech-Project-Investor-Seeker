@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html>
+         <head>
+            <meta charset="UTF-8"/>
+            <link rel="stylesheet" href="../css/styleHome.css"/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+           
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>ABOUT US</title>
+
+            <style>
+
+               /* fotter */
+
+			   .saction-for-nav-page {
+  background-color: var(--primary-color);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  height: 10vh;
+  width: 100%;
+  background-image: url(home_picture/top_cover4.j);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: change 5s infinite;
+  transition: 1s;
+  
+} 
+ 
+footer {
+    background-color: #1C1D1F;
+    color: #fff;
+    padding: 50px 0;
+    
+  }
+
+  footer .row{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+
+  footer .footer-box {
+    margin-bottom: 30px;
+    overflow-x:hidden;
+    
+  }
+
+  footer .aboutus{
+    margin-top: 78px;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  footer .quicklink{
+
+    margin-top: 30px;
+  }
+  
+ 
+
+  footer h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  footer p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer ul li a {
+    font-size: 14px;
+    color: #ccc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  footer ul li a:hover {
+    color: #cd3535;
+  }
+  
+  footer .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  footer .container {
+   
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  footer .newsletter{
+    margin-top: -30px;
+  }
+
+  .form-control{
+    
+
+    width: 300px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 5px;
+
+  }
+   
+ 
+   
+ /* fotter */
+
+
+ @media (max-width: 991px){
+    
+
+    footer .col-lg-3 {
+        flex-basis: 33.33%;
+        max-width: 33.33%;
+      }
+}
+
+
+@media (max-width: 786px){
+    
+    /* footer */
+
+    footer .col-md-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+      }
+
+      footer .contactus{
+        margin-top:26px;
+
+    }
+    footer .aboutus{
+        margin-top:56px;
+        
+      }
+
+      footer .aboutus{
+        margin-top: 0;
+        padding-right: 0;
+      }
+
+      footer .quicklink{
+        margin-top: 0;
+        padding-right: 0;
+      }
+
+      footer .contactus{
+        margin-top: 0;
+        padding-right: 0;
+      }
+    /* footer */
+
+    
+}
+
+@media (max-width: 570px){
+    
+    
+        /* footer */
+
+        footer .row{
+            flex-direction: column;
+            width: unset;
+           
+            text-align: center;
+          }
+
+          footer .aboutus{
+            padding: 0;
+          }
+        /* footer */
+        }
+/* media */
+
+
+
+
+
+
+
+
+
+
+.dropdown_menu{
+    display: none;
+    position: fixed;
+    left: 2rem;
+    top: 60px;
+    height: 0px;
+    width: 300px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   }
+
+   .open{
+         
+         height: 290px;
+         
+   }
+
+   .dropdown_menu li{
+           padding: 0.7rem;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+   }
+
+   
+
+   button{
+    background-color: orange;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale .2 ease;
+  }
+
+  .sign-out-button:hover{
+    scale: 1.05;
+    color: #fff;
+  }
+
+  button:hover{
+    scale: 1.05;
+    color: #fff;
+  }
+
+               </style>
+         </head>
+
+         <body>
+
+                  <section class="saction-for-nav-page">
+
+                       <div class="navigartion stick">
+                              
+                              
+                             <div class="logo">
+                        <a href="#">Investor<span class="logo-span">Seeker</span></a>
+                                  </div>
+
+                                 
+                              <ul class="links">
+                                   <li><a href="home.php">Home</a></li>
+                                   <li><a href="About-US/AboutUs.html">About</a></li>
+                                   <li><a href="#">Contact</a></li>
+                                   <li><a href="Responsive Services Section/index.html">Services</a></li>
+                                   <li><a href="Our-team/team.html">Team</a></li>
+                              </ul>
+                           
+
+                              <div class="toog_btn">
+                           <button onclick="location.href='loginForm.php'" class="sign-up-button">Sign In</button>
+                             
+
+                           
+                           
+                              <i class="fa-solid fa-bars"></i>
+                           </div>
+
+
+                         </div>
+                           <div class="dropdown_menu ">
+
+                                   <li><a href="#">Home</a></li>
+                                   <li><a href="#">About</a></li>
+                                   <li><a href="#">Contact</a></li>
+                                   <li><a href="#">Services</a></li>
+                                   <li><a href="#">Team</a></li>
+                            <li><button class="sign-up-button button">Sign In</button></li>
+
+                         </div>
+
+                         
+          
+                        
+                         
+
+                  </section> 
+
+                  
+
+                       <script>
+                        const toggleBtn=document.querySelector('.toog_btn');
+                        const toggleIcn=document.querySelector('.toog_btn i');
+                        const dropdownMenu=document.querySelector('.dropdown_menu');
+
+                        toggleBtn.onclick = function()
+                        {
+                            dropdownMenu.classList.toggle('open')
+                            const isOpen=dropdownMenu.classList.contains('open')
+                            toggleIcn.classList=isOpen
+                            ?'fa-solid fa-xmark'
+                            :'fa-solid fa-bars'
+
+                            
+                        }
+                        
+                       </script>
+
+                       <script>
+
+                        window.addEventListener("scroll",function(){
+                           var navigartionn = document.querySelector("navigartion");
+                           navigartionn.classList.toggle("sticky");
+                        })
+
+                       </script>
+
+
+
+
+
+
+
+
+
+	
+
+<div class="heading">
+	<h1>About Us</h1>
+	<p>Investment and entrepreneurship go hand in hand, as entrepreneurs often require funding to turn their innovative ideas into successful businesses. Through strategic investments, entrepreneurs can accelerate their growth and achieve their goals, while investors can reap the rewards of a profitable partnership.</p>
+
+</div>
+<div class="container">
+	<section class="about">
+		<div class="about-image">
+		<img src="investor.png">	
+		</div>
+		<div class="about-content">
+		<h2>New Era of Investment and Business</h2>	
+		<p>Welcome to Investor Seeker, a platform dedicated to connecting entrepreneurs with investors. Our mission is to make the investment process easier, more efficient, and more transparent for both parties. Whether you're a startup founder seeking funding or an investor looking for promising opportunities, Investor Seeker provides a user-friendly platform to streamline the process. We understand the challenges faced by both entrepreneurs and investors, and we aim to bridge the gap between them through our comprehensive database and personalized matchmaking service. Join us today and let us help you turn your investment dreams into reality.</p>
+		<a href="" class="read-more">Read more</a>
+		</div>
+	</section>
+</div>
+</body>
+</html>

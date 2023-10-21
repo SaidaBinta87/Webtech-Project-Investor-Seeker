@@ -1,0 +1,148 @@
+.back{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right,#287BFF,#755BBA,#287BFF);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body, html {   
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;   
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .form{
+        
+        position: absolute;
+        left: 450px;
+        top: 250px;
+       
+        
+    
+        
+    }
+} 
+
+
+
+
+.error{
+    width: 92%;
+    margin: 0px auto;
+    padding: 0px 10px;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: left;
+}
+
+
+.back:hover{
+    background-image: linear-gradient(to right,#755BBA,#287BFF,#755BBA); 
+}
+
+.form{
+    height: 400px;
+    width: 340px;
+    background-color: rgb(255, 255,255);
+    position: relative;
+    /* left: 750px; */
+    top: 150px; 
+    border-radius: 2%;
+    padding: 30px;
+    margin:auto;
+    display: grid;
+    place-items: center;
+   
+  
+}
+h1{
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding-bottom:10px ;
+    border-bottom: 1px solid #B3B3B3;
+    margin-bottom: 20px;
+    
+}
+input{
+
+    border: none;
+    border-bottom: 2px solid #B3B3B3;
+    padding: 10px;
+    width: 90%;
+    margin: 10px;;
+}
+::placeholder{
+    color: #B3B3B3;
+    font-weight: 50;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+input[type=text]{
+    margin-top: 20px;
+}
+input[type=submit]{
+    margin-top: 20px;
+    border: none;
+    background-image: linear-gradient(to right,#287BFF,#755BBA);
+    padding: 10px;
+    height: 45px;
+    background-position: 0%;
+    border-radius:2%  ;
+    position: relative;
+    left: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: large;
+    
+
+}
+.not{
+    color: #1d1b1b;
+    font-weight: 50;
+    font-size: large;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+    
+}
+a:link { text-decoration: none; }
+.forgot{
+    color: #B3B3B3;
+    font-weight: 50;
+    font-size: large;
+    margin-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+input[type=submit]:hover{
+
+    scale: 1.05;
+   
+    background-image: linear-gradient(to right,#755BBA,#287BFF);
+    
+    
+    
+
+}
+
+.logo{
+
+    width:100px;
+}
+
+
+.error-message {
+            color: red;
+            display: inline;
+        }
+
+
